@@ -4,9 +4,90 @@
     <meta charset="UTF-8">
     <meta name="author" content="Борис Зашляпин">
     <title>Battleship</title>
+    <link rel="stylesheet" href="./pages/index.css">
   </head>
-  <body>
-    <h1>Play battleship!</h1>
-    <script src="./scripts/index.js"></script>
+  <body class="page">
+    <div class="board">
+      <div class="board__message-area"></div>
+      <table class="board__table">
+
+        <tr>
+          <td id="00" class="board__table-cell"></td>
+          <td id="01" class="board__table-cell"></td>
+          <td id="02" class="board__table-cell"></td>
+          <td id="03" class="board__table-cell"></td>
+          <td id="04" class="board__table-cell"></td>
+          <td id="05" class="board__table-cell"></td>
+          <td id="06" class="board__table-cell"></td>
+        </tr>
+
+        <tr>
+          <td id="10" class="board__table-cell"></td>
+          <td id="11" class="board__table-cell"></td>
+          <td id="12" class="board__table-cell"></td>
+          <td id="13" class="board__table-cell"></td>
+          <td id="14" class="board__table-cell"></td>
+          <td id="15" class="board__table-cell"></td>
+          <td id="16" class="board__table-cell"></td>
+        </tr>
+
+        <tr>
+          <td id="20" class="board__table-cell"></td>
+          <td id="21" class="board__table-cell"></td>
+          <td id="22" class="board__table-cell"></td>
+          <td id="23" class="board__table-cell"></td>
+          <td id="24" class="board__table-cell"></td>
+          <td id="25" class="board__table-cell"></td>
+          <td id="26" class="board__table-cell"></td>
+        </tr>
+
+        <tr>
+          <td id="30" class="board__table-cell"></td>
+          <td id="31" class="board__table-cell"></td>
+          <td id="32" class="board__table-cell"></td>
+          <td id="33" class="board__table-cell"></td>
+          <td id="34" class="board__table-cell"></td>
+          <td id="35" class="board__table-cell"></td>
+          <td id="36" class="board__table-cell"></td>
+        </tr>
+
+        <tr>
+          <td id="40" class="board__table-cell"></td>
+          <td id="41" class="board__table-cell"></td>
+          <td id="42" class="board__table-cell"></td>
+          <td id="43" class="board__table-cell"></td>
+          <td id="44" class="board__table-cell"></td>
+          <td id="45" class="board__table-cell"></td>
+          <td id="46" class="board__table-cell"></td>
+        </tr>
+
+        <tr>
+          <td id="50" class="board__table-cell"></td>
+          <td id="51" class="board__table-cell"></td>
+          <td id="52" class="board__table-cell"></td>
+          <td id="53" class="board__table-cell"></td>
+          <td id="54" class="board__table-cell"></td>
+          <td id="55" class="board__table-cell"></td>
+          <td id="56" class="board__table-cell"></td>
+        </tr>
+
+        <tr>
+          <td id="60" class="board__table-cell"></td>
+          <td id="61" class="board__table-cell"></td>
+          <td id="62" class="board__table-cell"></td>
+          <td id="63" class="board__table-cell"></td>
+          <td id="64" class="board__table-cell"></td>
+          <td id="65" class="board__table-cell"></td>
+          <td id="66" class="board__table-cell"></td>
+        </tr>
+
+      </table>
+
+      <form class="board__form">
+        <input type="text" class="guess-input" placeholder="A0" class="board__form-input">
+        <input type="button" class="fire-button" value="Fire!" class="board__form-input">
+      </form>
+    </div>
+    <!-- <script src="./scripts/index.js"></script> -->
   </body>
 </html>

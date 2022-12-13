@@ -1,0 +1,6 @@
+.board__message-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(83, 175, 19);
+}

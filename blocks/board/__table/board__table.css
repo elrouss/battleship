@@ -1,0 +1,6 @@
+.board__table {
+  position: absolute;
+  left: 173px;
+  top: 98px;
+  border-spacing: 0;
+}

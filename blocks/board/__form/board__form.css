@@ -1,0 +1,7 @@
+.board__form {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+  background-color: rgb(83, 175, 19);
+}

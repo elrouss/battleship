@@ -1,0 +1,17 @@
+/* IMPORTANT */
+@import url(../vendor/normalize.css);
+
+/* PAGE */
+@import url(../blocks/page/page.css);
+
+/* BOARD */
+@import url(../blocks/board/board.css);
+@import url(../blocks/board/__message-area/board__message-area.css);
+@import url(../blocks/board/__table/board__table.css);
+@import url(../blocks/board/__table-cell/board__table-cell.css);
+@import url(../blocks/board/__form/board__form.css);
+@import url(../blocks/board/__form-input/board__form-input.css);
+
+/* ATTACKS */
+@import url(../blocks/hit/hit.css);
+@import url(../blocks/miss/miss.css);
