@@ -1,13 +1,17 @@
 // Улучшение:
 // 1. Добавить фоновую музыку из "Пиратов Карибского моря".
 
+import {
+  messageArea,
+  fireButton,
+  guessInput,
+  btnEnter
+} from "../utils/constants.js";
+
 // Объект представления
 const view = {
   displayMessage: function(msg) {
-    const messageArea = document.querySelector('.board__message-area');
     messageArea.textContent = msg;
-
-    console.log(messageArea)
   },
 
   displayHit: function(location) {
@@ -107,6 +111,30 @@ const controller = {
     return null;
   }
 }
+
+// Получение данных от игрока
+function init() {
+  fireButton.onclick = handleFireButton;
+  guessInput.onkeypress = handleKeyPress;
+}
+
+// Получение координат от формы
+function handleFireButton() {
+  const guess = guessInput.value;
+
+  controller.processGuess(guess);
+  guessInput.value = '';
+}
+
+// Нажатие по клавише 'Enter'
+function handleKeyPress(evt) {
+  if (evt.keyCode === btnEnter) {
+    fireButton.click();
+    return false;
+  }
+}
+
+window.onload = init;
 
 
 // Тесты
